@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Locator</string>
+
+    <string name="search">Search</string>
+    <string name="confirm">Confirm Place</string>
+    <string name="unknownAddress">Unknown Address</string>
+</resources>

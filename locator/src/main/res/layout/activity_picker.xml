@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:animateLayoutChanges="true">
+
+        <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/dp15"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rect_white_stroke_gray"
+                android:drawableStart="@drawable/ic_search_black"
+                android:drawableLeft="@drawable/ic_search_black"
+                android:drawablePadding="@dimen/dp10"
+                android:gravity="center_vertical|start"
+                android:hint="@string/search"
+                android:padding="@dimen/dp15"
+                android:textColor="@color/selector_search"
+                android:textColorHint="@color/selector_search_hint"
+                android:textSize="@dimen/sp15"
+                android:textStyle="normal" />
+
+            <ImageButton
+                android:id="@+id/btnLocateMe"
+                android:layout_width="@dimen/dp40"
+                android:layout_height="@dimen/dp40"
+                android:layout_gravity="end"
+                android:layout_marginTop="@dimen/dp10"
+                android:background="@drawable/circle_white_border_gray"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_current_location" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnConfirm"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp50"
+            android:background="@drawable/rect_translucent_black"
+            android:gravity="center"
+            android:layout_gravity="bottom"
+            android:layout_margin="@dimen/dp15"
+            android:text="@string/confirm"
+            android:textStyle="bold"
+            android:textColor="@color/selector_confirm"
+            android:textSize="@dimen/sp15" />
+
+    </FrameLayout>
+</layout>
