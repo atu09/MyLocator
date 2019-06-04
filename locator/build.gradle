@@ -2,8 +2,6 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 28
-
-
     defaultConfig {
         applicationId "atirek.pothiwala.locator"
         minSdkVersion 16
@@ -12,7 +10,10 @@ android {
         versionName "1.0"
 
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
 
+    lintOptions {
+        abortOnError false
     }
 
     buildTypes {
